@@ -17,6 +17,5 @@ class I_adb :
         print("you are in data ")
 
 
-def hellow()
-
-    print("hellow world)
+def hellow():
+   print("hellow world")
