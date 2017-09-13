@@ -3,9 +3,27 @@ import sys
 
 #sys.path.append('/home/mohansai/python/Python_adb/M_adb')
 sys.path.append("/home/mohansai/python/Python_adb/M_adb")
-import M_adb
-import M_fastboot
+#from M_adb import myadb as adb
+#import M_fastboot
+import myadb
+#from myadb import myadb
 
 
-print(M_adb.hellow())
-print(M_fastboot.hellow())
+def main():
+    #print(myadb.hellow())
+    adb = myadb.madb()
+
+    adb._data_()
+    adb.run_cmd("adb devices")
+    print(adb.run_cmd)
+
+
+
+
+
+
+
+
+
+if __name__ == "__main__":
+    main()
