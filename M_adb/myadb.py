@@ -2,10 +2,12 @@ import os
 import  subprocess
 
 class madb(object):
+
     __adbpath=None
     __output=None
     __error=None
     __devices=None
+    __cmd=None
 
     def __init__(self,adbpath="adb"):
         self.__adbpath=adbpath
@@ -13,30 +15,42 @@ class madb(object):
     def _clear_(self):
         self.__output = None
         self.__error  = None
-        print("data cleased")
+        #print("data cleased")
 
     def _build_cmd_(self,cmd):
-        print("you are in build command {%s}" % cmd)
-        a=list(cmd)
-        print (type(a))
-        a.insert(0,self.__adbpath)
-        a.insert(1,cmd)
-        print a
+        #print("you are in build command {%s}" % cmd)
+        cmd_list=[]
+        #print(type(cmd))
+        cmd_list.insert(0,self.__adbpath)
+        cmd_list.insert(1,cmd)
+        #print(cmd_list)
+        print("generated build and returning from __build_cmd_ "," ".join(cmd_list))
+        return " ".join(cmd_list)
+
     def run_cmd(self,cmd):
-        print("running {%s}" % cmd)
+        print("start_run_cmd {%s}" % cmd)
         self._clear_()
-        self._build_cmd_(cmd)
+        #self._build_cmd_(cmd)
+        #print(self._build_cmd_(cmd))
+        self.__cmd=self._build_cmd_(cmd)
+        print("[cmd]",self.__cmd)
 
-
+        command=subprocess.check_output(self.__cmd,shell=True)
+        print(command)
 
     def adb_devices(self):
-        print("adb devices")
+        #print("adb devices")
         self.__devices=None
         self.run_cmd("devices")
 
+    def adb_root(self):
+        #print("adb devices")
+        self.__devices = None
+        self.run_cmd("root")
 
 
 
-#print(__data__)
+
+        #print(__data__)
 #print(hellow())
 #print(call_class())'''
