@@ -1,6 +1,5 @@
 import sys
 
-
 sys.path.append("/home/mohansai/python/Python_adb/M_adb")
 import myadb
 

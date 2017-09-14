@@ -15,7 +15,6 @@ class madb(object):
     def _clear_(self):
         self.__output = None
         self.__error  = None
-        #print("data cleased")
 
     def _build_cmd_(self,cmd):
         #print("you are in build command {%s}" % cmd)
@@ -36,7 +35,20 @@ class madb(object):
         print("[cmd]",self.__cmd)
 
         command=subprocess.check_output(self.__cmd,shell=True)
+        print ("type",type(command))
         print(command)
+        data = command.split(" ")[0]
+        print data
+        data = command.split(" ")[1]
+        print data
+        data = command.split(" ")[2]
+        print data
+        data = command.split(" ")[3]
+        print data
+        data = command.split(" ")[4]
+        print ("data",data)
+        #data = command.split(" ")[5]
+        #print data
 
     def adb_devices(self):
         #print("adb devices")
