@@ -11,7 +11,7 @@ def main():
     #adb._data_()
     #adb.run_cmd()
 
-    #adb.adb_devices()
+    adb.adb_devices()
     adb.adb_root()
 
 
