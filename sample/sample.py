@@ -13,6 +13,7 @@ def main():
 
     adb.adb_devices()
     adb.adb_root()
+    adb.adb_shell()
 
 
 

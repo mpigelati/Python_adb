@@ -94,4 +94,6 @@ class madb(object):
             print ("adb root failed",self.__error)
             self.__devices=None '''
 
-
+    def adb_shell(self):
+        data = self.run_cmd("shell")
+        print ("shell",data)
