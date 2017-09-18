@@ -2,7 +2,7 @@ import os
 import  subprocess
 import re
 
-Meta_com = "cat firmware/verinfo/ver_info.txt"
+Meta = "cat firmware/verinfo/ver_info.txt"
 
 class madb(object):
 
@@ -36,7 +36,7 @@ class madb(object):
             self.__cmd = self._build_cmd_(cmd)
             # print("[cmd]",self.__cmd)
             command = subprocess.check_output(self.__cmd,shell=True)
-            print ("command",command)
+            #print ("command",command)
             return  command
         except OSError, e:
            self.__error = str(e)
@@ -54,7 +54,7 @@ class madb(object):
 
         try:
             if dev != "" and  dev != "????????????":  # Need to filter more
-             print ("devide filter",dev)
+             #print ("devide filter",dev)
              self.__devices= dev
         except :
             print ("please keep dvice in MTP mode ")
@@ -67,9 +67,10 @@ class madb(object):
             cmd=self.run_cmd("devices")
             #print cmd
             self.device_filter(cmd)
-            print("cc",self.__devices)
+            #print("cc",self.__devices)
             if self.__devices != None:
                 print ("device_detected ",self.__devices)
+            return True
         except :
             self.__devices-=None
             print (self.__devices)
@@ -82,9 +83,10 @@ class madb(object):
         if self.__devices != None:
             #print ("device tetected ",self.__devices)
             data = self.run_cmd("root")
-            print("root fun",data)
+            #print("root fun",data)
             if ch_adbd  in data:
                 print ("Devie is rooted")
+                return True
             else:
                 print ("Devuice is not rooted please check")
         '''
@@ -94,6 +96,38 @@ class madb(object):
             print ("adb root failed",self.__error)
             self.__devices=None '''
 
+
     def adb_shell(self):
-        data = self.run_cmd("shell")
-        print ("shell",data)
+        print ("adb_shell function")
+        try:
+            adb_return =self.adb_devices()
+            if adb_return ==True and self.__devices != None:
+                print ("Device detected successfully")
+                root_return=self.adb_root()
+                if root_return == True:
+                       print ("adb rooted successfully")
+                       data = self.run_cmd("shell")
+                       print("shell",data)
+                       self.shell_cmd(Meta)
+
+        except:
+            print ("failed in adb shell")
+
+            """print ("adb shel fun",self.__devices)
+             if(self.__devices) != None:
+                print ("device detected",self.__devices)
+                data = self.run_cmd("shell")
+                   #self.run_cmd(cmd)
+                print ("adb shell executed successfullay")
+            else:
+                print ("plese check devicess")"""
+
+    def find_meta(self):
+        print ("find_meta ")
+        if (self.__devices) != None:
+            print ("device detected ")
+            data = self.run_cmd("shell")
+            # self.run_cmd(cmd)
+            print ("adb shell executed successfullay")
+        else:
+            print ("failed to detect devices please connect HW")

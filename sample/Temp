@@ -1,3 +1,21 @@
 Device attach :- 'List of devices attached \n7dab6ce3\tdevice\n\n')
                   List of devices attached \n\n')
 
+/usr/bin/python2.7 /home/mohansai/python/Python_adb/sample/sample.py
+('build cmd', ['adb', 'devices'])
+('command', 'List of devices attached \n7dab6ce3\tdevice\n\n')
+('devide filter', '7dab6ce3')
+('device_detected ', '7dab6ce3')
+root
+('build cmd', ['adb', 'devices'])
+('command', 'List of devices attached \n7dab6ce3\tdevice\n\n')
+('devide filter', '7dab6ce3')
+('device_detected ', '7dab6ce3')
+('build cmd', ['adb', 'root'])
+('command', 'adbd is already running as root\n')
+('root fun', 'adbd is already running as root\n')
+Devie is rooted
+7dab6ce3
+device detected
+('build cmd', ['adb', 'shell'])
+
