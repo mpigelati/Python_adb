@@ -29,6 +29,16 @@ class madb(object):
         #print("generating build command and returning from __build_cmd_() function  "," ".join(cmd_list))
         return " ".join(cmd_list)
 
+    def shell_cmd(self, string):
+
+        command = 'adb shell cat firmware/verinfo/ver_info.txt'
+        p = subprocess.Popen(command, shell=True,
+                             stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+
+        stdout, stderr = p.communicate('ls')
+        #print stdout
+        return stdout
+
     def run_cmd(self,cmd):
         #print("start_run_cmd {%s}" % cmd)
         self._clear_()
@@ -36,12 +46,12 @@ class madb(object):
             self.__cmd = self._build_cmd_(cmd)
             # print("[cmd]",self.__cmd)
             command = subprocess.check_output(self.__cmd,shell=True)
-            #print ("command",command)
+            #command = subprocess.Popen(self.__cmd, shell=False, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+            print ("command",command)
             return  command
         except OSError, e:
            self.__error = str(e)
            self.__devices=None
-            #self.__error = str(e)
            print (self.__error)
            print ("Failed to execute",self.__cmd)
 
@@ -99,6 +109,7 @@ class madb(object):
 
     def adb_shell(self):
         print ("adb_shell function")
+        command = 'adb shell cat firmware/verinfo/ver_info.txt'
         try:
             adb_return =self.adb_devices()
             if adb_return ==True and self.__devices != None:
@@ -106,10 +117,13 @@ class madb(object):
                 root_return=self.adb_root()
                 if root_return == True:
                        print ("adb rooted successfully")
-                       data = self.run_cmd("shell")
-                       print("shell",data)
-                       self.shell_cmd(Meta)
-
+                       #data = self.shell_cmd("cmd")
+                       #print("shell",data)
+                       mydata= self.shell_cmd(Meta)
+                       print("-->",mydata)
+                       print type(mydata)
+                       #for meta in mydata:
+                       #     print meta
         except:
             print ("failed in adb shell")
 
