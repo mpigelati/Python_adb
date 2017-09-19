@@ -11,9 +11,9 @@ def main():
     #adb._data_()
     #adb.run_cmd()
 
-    adb.adb_devices()
+    #adb.adb_devices()
     #adb.adb_root()
-    adb.adb_shell()
+    adb.meta_info()
     #adb.find_meta()
 
 
