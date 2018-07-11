@@ -1,0 +1,17 @@
+import subprocess
+def exe_cmd(cmd):
+    p= subprocess.Popen(cmd, stdout=subprocess.PIPE, shell=True)
+    (output, err) = p.communicate()
+    p.wait()
+    print(str(output.decode('ascii')))
+#exe_cmd("mkdir fifth")
+#exe_cmd("cd fifth")
+#exe_cmd("path")
+exe_cmd("git clone https://github.com/mpigelati/Python_adb")
+exe_cmd("cd Python_adb")
+#exe_cmd("pwd")
+#exe_cmd("git clone https://github.com/bhavani465/sample_rep.git")
+#exe_cmd("git init")
+#exe_cmd("git add -A")
+#exe_cmd("git commit -m first commit")
+exe_cmd("git log")
