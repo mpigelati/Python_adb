@@ -2,71 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34718101-174f-4ed7-9c74-c57e18e21478" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/assignment.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/10.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/18.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/19.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/21.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/22.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/23.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/24.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/25.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/26.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/27.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/29.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/30.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/31.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/32.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/33.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/34.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/35.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/37.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/38.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/39.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/40.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/41.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/42.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/43.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/44.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/45.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/46.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/48.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/56.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/57.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/58.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/59.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/6.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/61.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/62.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/63.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/64.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/65.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/68.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/7.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/9.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ccsv.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datetime.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/digits.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/disease.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/empinfo.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/file.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task1_git.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/text.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task.py" beforeDir="false" afterPath="$PROJECT_DIR$/task.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -102,7 +38,7 @@
         <entry file="file://$PROJECT_DIR$/task1.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
-              <caret line="16" column="18" selection-start-line="16" selection-end-line="16" selection-end-column="18" />
+              <caret line="16" column="18" selection-end-line="16" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -110,8 +46,8 @@
       <file leaf-file-name="task.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/task.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+            <state relative-caret-position="204">
+              <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
@@ -763,13 +699,6 @@
     <entry file="file://$PROJECT_DIR$/Python_adb/g_log.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/task1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="18" selection-start-line="16" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/7.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -777,10 +706,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/task1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/task.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+        <state relative-caret-position="204">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
           </folding>
